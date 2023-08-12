@@ -11,6 +11,7 @@ https://api.buymeacrypto.com/api/strategy
 
 # faq 
  https://api.buymeacrypto.com/api/faq?msg=op msg key you are receive with tokens. 
+Msg = key. Key you receive in token/strategy response.
 For click on token btn you fetch request for faq with this token. I'm update faq text soon.
 > Response example - 
 ```"Optimism (OP) is a layer-two blockchain on top of Ethereum. Optimism benefits from the security of the Ethereum mainnet and helps scale the Ethereum ecosystem by using optimistic rollups. That means transactions are trustlessly recorded on Optimism but ultimately secured on Ethereum."```
