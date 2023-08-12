@@ -1,73 +1,11 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+Api - 
+Base tokens - https://api.buymeacrypto.com/api/tokens?network=base
+optimism tokens - https://api.buymeacrypto.com/api/tokens?network=op
+Response example - [{"name":"Optimism","address":"0x","image":"https://api.buymeacrypto.com/op.png","key":"op"},{"name":"Arbitrum","address":"0x","image":"https://api.buymeacrypto.com/arb.png","key":"arb"},{"name":"Lido Dao","address":"0x","image":"https://api.buymeacrypto.com/lido.png","key":"lido"},{"name":"Wrapped Matic","address":"0x","image":"https://api.buymeacrypto.com/wmatic.png","key":"wmatic"},{"name":"USD COIN","address":"0x","image":"https://api.buymeacrypto.com/usdc.png","key":"usdc"},{"name":"Chainlink","address":"0x","image":"https://api.buymeacrypto.com/link.png","key":"link"},{"name":"WETH","address":"0x","image":"https://api.buymeacrypto.com/weth.png","key":"weth"},{"name":"Wrapped Bitcoin","address":"0x","image":"https://api.buymeacrypto.com/wbtc.png","key":"wbtc"},{"name":"Synthetix Network","address":"0x","image":"https://api.buymeacrypto.com/snx.png","key":"snx"},{"name":"WORLDCOIN","address":"0x","image":"https://api.buymeacrypto.com/wld.png","key":"wld"}]
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Strategy - https://api.buymeacrypto.com/api/strategy 
+> Reponse example - [{"name":"Low Risk","images":["https://api.buymeacrypto.com/wbtc.png","https://api.buymeacrypto.com/weth.png"],"key":"low"},{"name":"Middle Risk","images":["https://api.buymeacrypto.com/lido.png","https://api.buymeacrypto.com/op.png","https://api.buymeacrypto.com/arb.png"],"key":"middle"},{"name":"Heig Risk","images":["https://api.buymeacrypto.com/wld.png","https://api.buymeacrypto.com/snx.png","https://api.buymeacrypto.com/link.png"],"faq":"Heig risk strategy","key":"heig"}]
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
-
-```bash
-$ yarn install
-```
-
-## Running the app
-
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+faq - https://api.buymeacrypto.com/api/faq?msg=op msg key you are receive with tokens. 
+For click on token btn you fetch request for faq with this token. I'm update faq text soon.
+> Response example - "Optimism (OP) is a layer-two blockchain on top of Ethereum. Optimism benefits from the security of the Ethereum mainnet and helps scale the Ethereum ecosystem by using optimistic rollups. That means transactions are trustlessly recorded on Optimism but ultimately secured on Ethereum."
